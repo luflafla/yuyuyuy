@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GÊ Cestas - Converse conosco no WhatsApp para as melhores cestas de presentes!">
+    <meta name="keywords" content="cestas de presentes, cestas personalizadas, WhatsApp, GÊ Cestas, entrega rápida">
+    <title>GÊ Cestas - Seu presente ideal está no WhatsApp!</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FCE4EC; /* Rosa claro */
+        }
+        /* Definindo as cores personalizadas */
+        .text-verde-escuro { color: #166534; } /* Verde escuro */
+        .bg-verde-escuro { background-color: #166534; } /* Verde escuro */
+        .text-verde-medio { color: #22C55E; } /* Verde médio */
+        .bg-verde-medio { background-color: #22C55E; } /* Verde médio */
+        .bg-verde-claro { background-color: #86EFAC; } /* Verde claro */
+        .bg-rosa-claro { background-color: #FCE4EC; } /* Rosa claro */
+
+        /* Estilos personalizados para o player de vídeo Wistia */
+        wistia-player[media-id='9fhm30zzu2']:not(:defined) {
+            background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/9fhm30zzu2/swatch');
+            display: block;
+            filter: blur(5px);
+            padding-top:177.78%; /* Aspect ratio 0.5625 = 1/1.7778, então altura é 177.78% da largura */
+        }
+
+        /* Animação de flutuação para os botões */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+            100% { transform: translateY(0px); }
+        }
+        .btn-float {
+            animation: float 2s ease-in-out infinite;
+        }
+        .btn-float:hover {
+            animation: none; /* Remove floating on hover */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Cabeçalho (Header) -->
+    <header class="bg-rosa-claro text-verde-escuro p-4 shadow-lg">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center">
+                <!-- Apenas a Logo GÊ Cestas no cabeçalho -->
+                <img src="https://i.postimg.cc/7hMHby49/logo-ge-cestas-fundo-transparente.png" alt="Logo GÊ Cestas" class="h-16 w-auto rounded-lg">
+            </div>
+            <nav class="mt-4 md:mt-0 flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
+                <!-- Links Opcionais -->
+                <a href="#sobre" class="hover:text-gray-600 transition duration-300">Sobre</a>
+                <a href="#produtos" class="hover:text-gray-600 transition duration-300">Produtos</a>
+                <a href="#contato" class="hover:text-gray-600 transition duration-300">Contato</a>
+                <!-- Botão CTA Principal - Efeito de flutuação e hover -->
+                <a href="https://wa.me/5561996969696" class="bg-verde-escuro text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-300 btn-float
+                          hover:bg-verde-medio hover:scale-105">
+                    Fale Conosco no WhatsApp
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção 1: Introdução -->
+    <section class="relative bg-cover bg-center bg-no-repeat py-20 md:py-32 flex items-center justify-center text-center px-4"
+        style="background-image: url('https://i.postimg.cc/k5BgsZNM/Chat-GPT-Image-6-de-jun-de-2025-12-04-40.png');">
+        <div class="absolute inset-0 bg-verde-escuro opacity-50"></div> <!-- Overlay para legibilidade do texto -->
+        <div class="relative z-10 max-w-4xl mx-auto text-white"> <!-- Texto branco para contraste com a imagem de fundo -->
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Converse com a gente no WhatsApp para as melhores cestas de presentes!</h2>
+            <p class="text-xl md:text-2xl mb-8">Atendimento rápido e personalizado para tornar cada momento especial.</p>
+            <!-- Botão CTA Secundário - Efeito de flutuação e hover -->
+            <a href="https://wa.me/5561996969696" class="bg-white text-verde-escuro font-semibold py-4 px-8 rounded-full shadow-lg transition duration-300 btn-float
+                      hover:bg-gray-100 hover:scale-105">
+                Iniciar conversa agora
+            </a>
+        </div>
+        <!-- A imagem da primeira sessão agora é o background e foi removida daqui -->
+    </section>
+
+    <!-- Seção 2: Benefícios/Testemunhos -->
+    <section class="bg-rosa-claro py-16 md:py-24 px-4">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl md:text-4xl font-bold text-verde-escuro mb-12">O que a GÊ Cestas oferece para você?</h3>
+            <div class="flex flex-col md:flex-row items-center justify-center md:space-x-12 space-y-8 md:space-y-0">
+                <div class="w-full md:w-1/2">
+                    <img src="https://i.postimg.cc/VkHYJRxx/Chat-GPT-Image-14-de-mai-de-2025-11-14-13.png" alt="Cestas de Presentes" class="w-full h-auto rounded-xl shadow-lg">
+                </div>
+                <div class="w-full md:w-1/2 text-left">
+                    <ul class="space-y-6 text-xl">
+                        <li class="flex items-center">
+                            <svg class="w-8 h-8 text-verde-escuro mr-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span class="text-gray-700">Cestas totalmente **personalizadas** para cada ocasião e pessoa.</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-8 h-8 text-verde-escuro mr-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span class="text-gray-700">**Entrega rápida** e segura para que seu presente chegue no tempo certo.</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-8 h-8 text-verde-escuro mr-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span class="text-gray-700">**Atendimento direto** pelo WhatsApp para todas as suas dúvidas.</span>
+                        </li>
+                    </ul>
+                    <div class="mt-10 text-center md:text-left">
+                        <!-- Botão CTA Adicional - Efeito de flutuação e hover -->
+                        <a href="https://wa.me/5561996969696" class="bg-verde-escuro text-white font-semibold py-4 px-8 rounded-full shadow-lg transition duration-300 btn-float
+                                  hover:bg-verde-medio hover:scale-105">
+                            Saiba mais no WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 3: Call to Action Final -->
+    <section class="bg-verde-escuro text-white py-16 md:py-24 px-4 text-center">
+        <div class="container mx-auto max-w-3xl">
+            <h3 class="text-4xl md:text-5xl font-bold mb-6">Pronta para conversar? Estamos esperando no WhatsApp!</h3>
+            <p class="text-xl md:text-2xl mb-12">Clique no botão abaixo e tenha acesso a ofertas exclusivas.</p>
+            <div class="wistia-video-container mb-12 rounded-lg overflow-hidden shadow-xl">
+                <!-- Wistia Video Embed Code (Substituído) -->
+                <script src="https://fast.wistia.com/player.js" async></script>
+                <script src="https://fast.wistia.com/embed/9fhm30zzu2.js" async type="module"></script>
+                <style>wistia-player[media-id='9fhm30zzu2']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/9fhm30zzu2/swatch'); display: block; filter: blur(5px); padding-top:177.78%; }</style>
+                <wistia-player media-id="9fhm30zzu2" aspect="0.5625" data-autoplay="true" data-loop="true"></wistia-player>
+            </div>
+            <!-- Botão CTA Final - Efeito de flutuação e hover -->
+            <a href="https://wa.me/5561996969696" class="bg-white text-verde-escuro font-semibold py-4 px-10 rounded-full shadow-lg transition duration-300 btn-float
+                      hover:bg-gray-100 hover:scale-105 text-2xl">
+                Falar com a GÊ Cestas
+            </a>
+        </div>
+    </section>
+
+    <!-- Rodapé (Footer) -->
+    <footer class="bg-verde-claro text-verde-escuro py-8 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between text-center md:text-left space-y-4 md:space-y-0">
+            <div class="flex flex-col space-y-2">
+                <p>Email: <a href="mailto:contato@gecestas.com.br" class="hover:underline">contato@gecestas.com.br</a></p>
+                <div class="flex justify-center md:justify-start space-x-4 mt-2">
+                    <!-- Ícones de redes sociais (substitua '#' pelos links reais) -->
+                    <a href="#" class="hover:opacity-75 transition duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                    </a>
+                    <a href="#" class="hover:opacity-75 transition duration-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm3.375 5.5h-1.625v-1.625h1.625v1.625zm-.25 4.5v4.5h-2.5v-4.5h2.5zM12 7c-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5z" clip-rule="evenodd" /></svg>
+                    </a>
+                    <!-- Adicione mais ícones de redes sociais conforme necessário -->
+                </div>
+            </div>
+            <div class="flex flex-col space-y-2">
+                <p>Links Úteis:</p>
+                <a href="#politica-privacidade" class="hover:underline">Política de Privacidade</a>
+                <a href="#termos-uso" class="hover:underline">Termos de Uso</a>
+            </div>
+            <!-- Link alternativo para WhatsApp no rodapé - Efeito de flutuação e hover -->
+            <a href="https://wa.me/5561996969696" class="bg-verde-escuro text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-300 btn-float
+                      hover:bg-verde-medio hover:scale-105">
+                Entre em contato via WhatsApp
+            </a>
+        </div>
+        <div class="text-center mt-6 text-sm">
+            &copy; 2025 GÊ Cestas. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- JavaScript para rodar o vídeo automaticamente e outros scripts futuros -->
+    <script>
+        // Placeholder for any future JavaScript functionality.
+        // Autoplay and loop are now handled by data attributes on the wistia-player tag.
+        // Note: Browser autoplay policies might still block autoplay without user interaction.
+        // However, the data attributes are the correct way to request this behavior from Wistia's player.
+    </script>
+</body>
+</html>
